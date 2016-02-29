@@ -10,7 +10,10 @@ Text Domain: [Plugin Text Domain]
 Domain Path: /languages
 */
 
-
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 add_action( 'after_setup_theme', 'WSUWP_Plugin_Skeleton' );
 /**
