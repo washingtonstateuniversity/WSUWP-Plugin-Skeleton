@@ -15,6 +15,9 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+// The core plugin class.
+require dirname( __FILE__ ) . '/includes/class-wsuwp-plugin-skeleton.php';
+
 add_action( 'after_setup_theme', 'WSUWP_Plugin_Skeleton' );
 /**
  * Start things up.
