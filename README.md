@@ -39,6 +39,8 @@ There are several places throughout the WSUWP Plugin Skeleton code that should b
 1. Update the project name in `composer.json`.
 1. Update the project name and URL in `package.json`.
 1. Update the ruleset name and description in `phpcs.ruleset.xml`.
+1. Update the name and description of the project in `README.md`, replacing all of this text.
+1. Update the name, copyright, and URL in `LICENSE`.
 
 ### Testing the initial plugin structure
 
