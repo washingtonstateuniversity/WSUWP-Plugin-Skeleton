@@ -28,7 +28,7 @@ git status
 
 ### Alter the plugin to be its own project
 
-There are several places throughout the WSUWP Plugin Skeleton code that should be changed to match the new plugin. A quick option is to search and replace the terms "WSUWP Plugin Skeleton", "WSUWP_Plugin_Skeleton", and "wsuwp-plugin-skeleton" with the new plugin's name, though you'll want to go through all files and double-check the work.
+There are several places throughout the WSUWP Plugin Skeleton code that should be changed to match the new plugin.
 
 1. The main plugin file, `wsuwp-plugin-skeleton.php`, should be renamed to `wsuwp-new-feature.php`.
 1. The main class file, `includes/class-wsuwp-plugin-skeleton.php`, should be renamed to `includes/class-wsuwp-new-feature.php`.
@@ -41,6 +41,8 @@ There are several places throughout the WSUWP Plugin Skeleton code that should b
 1. Update the ruleset name and description in `phpcs.ruleset.xml`.
 1. Update the name and description of the project in `README.md`, replacing all of this text.
 1. Update the name, copyright, and URL in `LICENSE`.
+
+After completing these, search for the terms "WSUWP Plugin Skeleton", "WSUWP_Plugin_Skeleton", and "wsuwp-plugin-skeleton" to be sure that all uses were caught.
 
 ### Testing the initial plugin structure
 
