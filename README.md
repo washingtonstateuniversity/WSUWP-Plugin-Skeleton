@@ -1,5 +1,7 @@
 # WSUWP Plugin Skeleton
 
+[![Build Status](https://travis-ci.org/washingtonstateuniversity/WSUWP-Plugin-Skeleton.svg?branch=master)](https://travis-ci.org/washingtonstateuniversity/WSUWP-Plugin-Skeleton)
+
 A framework for building a WordPress plugin at WSU.
 
 ## Initial setup
