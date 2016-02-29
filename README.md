@@ -39,6 +39,28 @@ In all examples, `New Feature` or `new-feature` will be used as a placeholder fo
 1. Update the project name and URL in `package.json`.
 1. Update the ruleset name and description in `phpcs.ruleset.xml`.
 
+### Testing the initial plugin structure
+
+1. Install the NPM dependencies.
+1. Install the Composer dependencies.
+1. Ensure code standards are sniffed properly.
+1. Ensure unit tests are running properly.
+
+#### In terminal
+
+```
+npm install
+composer install
+grunt phpcs
+phpunit
+```
+
+If you have not previously setup unit tests for WordPress projects, `phpunit` will not run properly. Use the test install script in the `bin` directory to setup a base for testing locally.
+
+```
+sh bin/install-wp-tests.sh wordpress_tests root ''
+```
+
 ### Add the updated plugin files to the repository
 
 The plugin should now be in its initial state, with all pieces renamed to fit the new project. An initial commit can be added with all of these files.
