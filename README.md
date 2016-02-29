@@ -78,3 +78,9 @@ git add -A
 git commit -m "Initial commit"
 git push origin master
 ```
+
+### Adding the project to Travis CI for continuous integration testing
+
+The repository provides a `.travis.yml` configuration file for use with [Travis CI][https://https://travis-ci.org]. As a member of the WSU organization, you should be able to enable your new repository for continuous integration under the [WSU Profile](https://travis-ci.org/profile/washingtonstateuniversity).
+
+Look at the [general settings](https://travis-ci.org/washingtonstateuniversity/WSUWP-Plugin-Skeleton/settings) for this project to view how new projects should be configured.
