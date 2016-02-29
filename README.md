@@ -6,7 +6,8 @@ A framework for building a WordPress plugin at WSU.
 
 ### Setup the plugin repository
 
-1. Clone this WSUWP Plugin Skeleton repository to a directory on your computer named for the new plugin.
+1. Create a [new repository](https://github.com/organizations/washingtonstateuniversity/repositories/new) under the Washington State University organization. This should have a name like "WSUWP Plugin New Feature".
+1. Clone this [WSUWP Plugin Skeleton](https://github.com/washingtonstateuniversity/WSUWP-Plugin-Skeleton/) repository to a directory on your computer named for the new plugin.
 1. Change into that new directory.
 1. Remove the `.git` directory that provides the history for the WSUWP Plugin Skeleton project.
 1. Initialize a new git repository in the directory.
