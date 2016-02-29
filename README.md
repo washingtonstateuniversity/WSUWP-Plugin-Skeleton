@@ -23,11 +23,9 @@ git remote add origin https://github.com/washingtonstateuniversity/WSUWP-Plugin-
 git status
 ```
 
-### Alter the plugin to fit the new project
+### Alter the plugin to be its own project
 
 There are several places throughout the WSUWP Plugin Skeleton code that should be changed to match the new plugin. A quick option is to search and replace the terms "WSUWP Plugin Skeleton", "WSUWP_Plugin_Skeleton", and "wsuwp-plugin-skeleton" with the new plugin's name, though you'll want to go through all files and double-check the work.
-
-In all examples, `New Feature` or `new-feature` will be used as a placeholder for the name of the new plugin.
 
 1. The main plugin file, `wsuwp-plugin-skeleton.php`, should be renamed to `wsuwp-new-feature.php`.
 1. The main class file, `includes/class-wsuwp-plugin-skeleton.php`, should be renamed to `includes/class-wsuwp-new-feature.php`.
@@ -81,6 +79,6 @@ git push origin master
 
 ### Adding the project to Travis CI for continuous integration testing
 
-The repository provides a `.travis.yml` configuration file for use with [Travis CI][https://https://travis-ci.org]. As a member of the WSU organization, you should be able to enable your new repository for continuous integration under the [WSU Profile](https://travis-ci.org/profile/washingtonstateuniversity).
+The repository provides a `.travis.yml` configuration file for use with [Travis CI](https://https://travis-ci.org). As a member of the WSU organization, you should be able to enable your new repository for continuous integration under the [WSU Profile](https://travis-ci.org/profile/washingtonstateuniversity).
 
 Look at the [general settings](https://travis-ci.org/washingtonstateuniversity/WSUWP-Plugin-Skeleton/settings) for this project to view how new projects should be configured.
