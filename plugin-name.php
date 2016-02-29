@@ -1,18 +1,18 @@
 <?php
 /*
-Plugin Name: [Plugin Name]
+Plugin Name: WSUWP Plugin Skeleton
 Version: 0.0.1
-Description: [Plugin Description]
+Description: A skeleton project to use when starting a new WSU WordPress plugin. Replace this description.
 Author: washingtonstateuniversity, [Other Plugin Authors]
 Author URI: https://web.wsu.edu/
-Plugin URI: [Plugin URL]
+Plugin URI: https://github.com/washingtonstateuniversity/WSUWP-Plugin-Skeleton
 Text Domain: [Plugin Text Domain]
 Domain Path: /languages
 */
 
-class WSU_Plugin_Name {
+class WSUWP_Plugin_Skeleton {
 	/**
-	 * @var WSU_Plugin_Name
+	 * @var WSUWP_Plugin_Skeleton
 	 */
 	private static $instance;
 
@@ -22,11 +22,11 @@ class WSU_Plugin_Name {
 	 *
 	 * @since 0.0.1
 	 *
-	 * @return \WSU_Plugin_Name
+	 * @return \WSUWP_Plugin_Skeleton
 	 */
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) ) {
-			self::$instance = new WSU_Plugin_Name();
+			self::$instance = new WSUWP_Plugin_Skeleton();
 			self::$instance->setup_hooks();
 		}
 		return self::$instance;
@@ -41,12 +41,12 @@ class WSU_Plugin_Name {
 
 }
 
-add_action( 'after_setup_theme', 'WSU_Plugin_Name' );
+add_action( 'after_setup_theme', 'WSUWP_Plugin_Skeleton' );
 /**
  * Start things up.
  *
- * @return \WSU_Plugin_Name
+ * @return \WSUWP_Plugin_Skeleton
  */
-function WSU_Plugin_Name() {
-	return WSU_Plugin_Name::get_instance();
+function WSUWP_Plugin_Skeleton() {
+	return WSUWP_Plugin_Skeleton::get_instance();
 }
