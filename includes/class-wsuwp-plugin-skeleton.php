@@ -28,5 +28,4 @@ class WSUWP_Plugin_Skeleton {
 	 * @since 0.0.1
 	 */
 	public function setup_hooks() {}
-
 }
