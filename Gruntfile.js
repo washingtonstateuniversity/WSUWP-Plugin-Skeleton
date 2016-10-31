@@ -1,6 +1,6 @@
-module.exports = function(grunt) {
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+module.exports = function( grunt ) {
+    grunt.initConfig( {
+        pkg: grunt.file.readJSON( "package.json" ),
 
         phpcs: {
             plugin: {
@@ -11,10 +11,10 @@ module.exports = function(grunt) {
                 standard: "phpcs.ruleset.xml"
             }
         }
-    });
+    } );
 
-    grunt.loadNpmTasks('grunt-phpcs');
+    grunt.loadNpmTasks( "grunt-phpcs" );
 
     // Default task(s).
-    grunt.registerTask('default', ['phpcs']);
+    grunt.registerTask( "default", [ "phpcs" ] );
 };
