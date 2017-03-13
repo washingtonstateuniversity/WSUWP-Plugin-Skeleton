@@ -70,9 +70,6 @@ before_script:
             exit 1
             ;;
         esac
-      fi
-    - |
-      if [[ ! -z "$WP_VERSION" ]] ; then
         bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
       fi
     - npm --version
@@ -86,12 +83,15 @@ before_script:
     - php --version
     - npm --version
     - node --version
-    - phpunit --version
-    - grunt --version
 
 script:
-    - phpunit
+    - |
+      if [[ "$WP_TRAVISCI" == "travis:phpunit" ]] ; then
+        phpunit --version
+        phpunit
+      fi
     - |
       if [[ "$WP_TRAVISCI" == "travis:grunt" ]] ; then
+        grunt --version
         grunt default
       fi
