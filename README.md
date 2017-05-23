@@ -30,12 +30,10 @@ git status
 
 There are several places throughout the WSUWP Plugin Skeleton code that should be changed to match the new plugin.
 
-1. The main plugin file, `wsuwp-plugin-skeleton.php`, should be renamed to `wsuwp-new-feature.php`.
-1. The main class file, `includes/class-wsuwp-plugin-skeleton.php`, should be renamed to `includes/class-wsuwp-new-feature.php`.
-1. The main tests file, `tests/test-wsuwp-plugin-skeleton.php`, should be renamed to `tests/test-wsuwp-new-feature.php`.
-1. In all files, update uses of the class `WSUWP_Plugin_Skeleton` to be `WSUWP_New_Feature`.
-1. In `wsuwp-plugin-skeleton.php` and `tests/bootstrap.php`, be sure included files are named properly.
-1. Update the plugin headers in `wsuwp-new-feature.php` to provide the project name, description, authors, etc...
+1. The main `includes/` file, `includes/wsuwp-plugin-skeleton.php`, should be renamed to match the new plugin's slug.
+1. The main `tests/` file, `tests/test-wsuwp-plugin-skeleton.php`, should be renamed to match the new plugin's slug.
+1. The namespace used in `includes/` files should be updated to reflect the new plugin.
+1. Update the plugin headers in `plugin.php` to provide the project name, description, authors, etc...
 1. Update the project name in `composer.json`.
 1. Update the project name and URL in `package.json`.
 1. Update the ruleset name and description in `phpcs.ruleset.xml`.
