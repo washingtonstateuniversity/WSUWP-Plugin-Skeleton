@@ -32,6 +32,7 @@ There are several places throughout the WSUWP Plugin Skeleton code that should b
 
 1. The main `includes/` file, `includes/wsuwp-plugin-skeleton.php`, should be renamed to match the new plugin's slug.
 1. The main `tests/` file, `tests/test-wsuwp-plugin-skeleton.php`, should be renamed to match the new plugin's slug.
+1. The namespace used in `includes/` files should be updated to reflect the new plugin.
 1. Update the plugin headers in `plugin.php` to provide the project name, description, authors, etc...
 1. Update the project name in `composer.json`.
 1. Update the project name and URL in `package.json`.
